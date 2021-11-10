@@ -534,5 +534,13 @@ h5.w3l-subtitle {
   font-weight: bold;
   font-size: 18px;
   text-decoration: none; }
+@media (max-width: 767px) {
+  .discount-box {
+    flex-wrap: wrap;
+    justify-content: center !important; }
+    .discount-box h5 {
+      width: 100%;
+      margin-bottom: 16px;
+      font-size: 32px; } }
 
 /*# sourceMappingURL=style.css.map */
