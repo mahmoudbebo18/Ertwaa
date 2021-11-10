@@ -77,6 +77,12 @@ body {
     .intro .main-head h1 {
       font-size: 46px;
       color: #1e66af; }
+      @media (max-width: 425px) {
+        .intro .main-head h1 {
+          font-size: 32px; } }
+      @media (max-width: 375px) {
+        .intro .main-head h1 {
+          font-size: 28px; } }
     @media (max-width: 991px) {
       .intro .main-head {
         flex-basis: 100%;
@@ -84,6 +90,8 @@ body {
   .intro .main-video {
     flex-basis: 48%;
     max-width: 100%; }
+    .intro .main-video video {
+      background-color: #92daff; }
     @media (max-width: 991px) {
       .intro .main-video {
         flex-basis: 100%; } }
@@ -92,12 +100,20 @@ body {
 .what-we-do {
   background-color: #f0f4f9;
   padding: 50px 0; }
+  .what-we-do .hvr-rectangle-in:before {
+    background-color: #1e66af !important; }
+  .what-we-do .read a {
+    color: #fff !important; }
+  .what-we-do h5 {
+    color: #1e66af !important; }
+  .what-we-do p.life {
+    color: #1e66af !important; }
   .what-we-do h2 {
     text-align: center;
     font-weight: 700;
     color: #1e66af;
     font-size: 3em;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
     margin-bottom: 12px; }
   .what-we-do p.desc {
     font-size: 1em;
@@ -202,7 +218,7 @@ p.ab {
 h5.w3l-subtitle {
   margin-bottom: 0.7em;
   font-weight: 700;
-  color: #1e66af;
+  color: #92daff;
   font-size: 2.5em;
   letter-spacing: 1px; }
 
@@ -229,7 +245,7 @@ h5.w3l-subtitle {
 .w3about-text p {
   line-height: 2em;
   margin-bottom: 1.5em;
-  color: #828282;
+  color: #000;
   font-size: 20px; }
   @media (max-width: 425px) {
     .w3about-text p {
@@ -246,7 +262,7 @@ h5.w3l-subtitle {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
-  background: #828282;
+  background: #f2a000;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -260,7 +276,7 @@ h5.w3l-subtitle {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #1e66af;
+  background: #92daff;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition-property: transform;
@@ -273,7 +289,7 @@ h5.w3l-subtitle {
 .hvr-rectangle-in:hover,
 .hvr-rectangle-in:focus,
 .hvr-rectangle-in:active {
-  color: white; }
+  color: #1e66af; }
 
 .hvr-rectangle-in:hover:before,
 .hvr-rectangle-in:focus:before,
@@ -282,7 +298,7 @@ h5.w3l-subtitle {
   transform: scale(0); }
 
 .life {
-  color: #1e66af !important;
+  color: #92daff !important;
   font-size: 24px;
   font-weight: bold;
   width: fit-content;
@@ -297,7 +313,7 @@ h5.w3l-subtitle {
 
 .read a {
   padding: 0.7em 2em;
-  color: #fff;
+  color: #1e66af;
   letter-spacing: 1px;
   animation: scaling 0.4s alternate infinite ease-in-out; }
 
@@ -315,7 +331,7 @@ h5.w3l-subtitle {
 /*about */
 .about {
   padding: 50px 0;
-  background-color: #92daff; }
+  background-color: #1e66af; }
 
 .prices {
   padding: 50px 0;
@@ -326,18 +342,19 @@ h5.w3l-subtitle {
     font-weight: bold; }
   .prices p {
     font-size: 20px;
-    color: #828282;
+    color: #000;
     max-width: 700px;
     margin: auto;
     margin-bottom: 50px; }
   .prices img {
-    border-radius: 10px; }
+    border-radius: 10px;
+    margin-bottom: 24px; }
   .prices .more-info {
     background: linear-gradient(90deg, #1e66af 50%, transparent 0) 0 100%/200% 3px repeat-x;
     animation: underline1 30s linear infinite;
     display: inline-block;
     font-size: 2em;
-    color: #1e66af;
+    color: #92daff;
     position: relative;
     line-height: 1.6em;
     text-decoration: none;
@@ -399,6 +416,17 @@ h5.w3l-subtitle {
         margin-bottom: 8px; }
         .features .feat-content ul li svg {
           margin-inline-end: 8px; }
+  .features .report {
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #f2a000;
+    animation: scaling 0.4s alternate infinite ease-in-out;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    color: #000;
+    text-decoration: none; }
 
 /*testimonials*/
 .testimonials img {
@@ -473,5 +501,38 @@ h5.w3l-subtitle {
     background-position: 0 100%; }
   100% {
     background-position: -8000px 100%; } }
+.more-links {
+  margin-top: 32px; }
+  .more-links a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    padding: 12px;
+    margin: 0 24px;
+    border-radius: 5px;
+    animation: scaling 0.4s alternate infinite ease-in-out; }
+    @media (max-width: 767px) {
+      .more-links a {
+        margin-bottom: 24px; } }
+  .more-links .click-to-view {
+    background-color: #f2a000; }
+  .more-links .click-to-whats {
+    background-color: #20b70e; }
+
+.discount-box h5 {
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0; }
+.discount-box a {
+  background-color: #1e66af;
+  color: #fff;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
