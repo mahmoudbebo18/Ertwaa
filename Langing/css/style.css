@@ -76,7 +76,9 @@ body {
     max-width: 100%; }
     .intro .main-head h1 {
       font-size: 46px;
-      color: #1e66af; }
+      color: #1e66af;
+      font-weight: bold;
+      text-align: center; }
       @media (max-width: 425px) {
         .intro .main-head h1 {
           font-size: 32px; } }
@@ -505,7 +507,7 @@ h5.w3l-subtitle {
   margin-top: 32px; }
   .more-links a {
     font-weight: bold;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     padding: 12px;
     margin: 0 24px;
@@ -515,7 +517,7 @@ h5.w3l-subtitle {
       .more-links a {
         margin-bottom: 24px; } }
   .more-links .click-to-view {
-    background-color: #f2a000; }
+    background-color: #f00; }
   .more-links .click-to-whats {
     background-color: #20b70e; }
 
