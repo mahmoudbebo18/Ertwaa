@@ -75,16 +75,43 @@ body {
     flex-basis: 48%;
     max-width: 100%; }
     .intro .main-head h1 {
-      font-size: 46px;
+      font-size: 40px;
       color: #1e66af;
       font-weight: bold;
       text-align: center; }
+      .intro .main-head h1 span {
+        display: block;
+        font-size: 27px;
+        margin-top: 10px; }
+      @media (min-width: 991px) {
+        .intro .main-head h1 {
+          font-size: 45px !important; }
+          .intro .main-head h1 span {
+            font-size: 33px !important; } }
+      @media (min-width: 1200px) {
+        .intro .main-head h1 {
+          font-size: 54px !important; }
+          .intro .main-head h1 span {
+            font-size: 40px !important; } }
+      @media (min-width: 767px) {
+        .intro .main-head h1 {
+          font-size: 36px; }
+          .intro .main-head h1 span {
+            font-size: 40px; } }
       @media (max-width: 425px) {
         .intro .main-head h1 {
-          font-size: 32px; } }
+          font-size: 35px;
+          line-height: 45px; }
+          .intro .main-head h1 span {
+            font-size: 25px; } }
       @media (max-width: 375px) {
         .intro .main-head h1 {
-          font-size: 28px; } }
+          font-size: 35px; } }
+      @media (max-width: 370px) {
+        .intro .main-head h1 {
+          font-size: 30px; }
+          .intro .main-head h1 span {
+            font-size: 23px; } }
     @media (max-width: 991px) {
       .intro .main-head {
         flex-basis: 100%;

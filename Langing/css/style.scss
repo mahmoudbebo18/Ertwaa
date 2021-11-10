@@ -104,15 +104,48 @@ body {
     flex-basis: 48%;
     max-width: 100%;
     h1 {
-      font-size: 46px;
+      font-size: 40px;
       color: $mainColor;
       font-weight: bold;
       text-align: center;
+      span {
+        display: block;
+        font-size: 27px;
+        margin-top: 10px;
+      }
+      @media (min-width: 991px) {
+        font-size: 45px !important ;
+        span{
+          font-size: 33px !important;
+        }
+      }
+      @media (min-width: 1200px) {
+        font-size: 54px !important ;
+        span{
+          font-size: 40px !important;
+        }
+      }
+      @media (min-width: 767px) {
+        font-size: 36px;
+        span{
+          font-size: 40px;
+        }
+      }
       @media (max-width: 425px) {
-        font-size: 32px;
+        font-size: 35px;
+        line-height: 45px;
+        span {
+          font-size: 25px;
+        }
       }
       @media (max-width: 375px) {
-        font-size: 28px;
+        font-size: 35px;
+      }
+      @media (max-width: 370px) {
+        font-size: 30px;
+        span{
+          font-size: 23px;
+        }
       }
     }
     @media (max-width: 991px) {
@@ -662,13 +695,13 @@ h5.w3l-subtitle {
     font-size: 18px;
     text-decoration: none;
   }
-  @media(max-width:767px){
+  @media (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: center !important;
-    h5{
+    h5 {
       width: 100%;
       margin-bottom: 16px;
-      font-size: 32px
+      font-size: 32px;
     }
   }
 }
